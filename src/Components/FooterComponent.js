@@ -29,7 +29,7 @@ export default function FooterComponent() {
     <footer className='page-footer grey lighten-2'>
       <div className='row'>
         <h3 className='center title black-text'>
-          Contact <u>Us</u> <i className='i-line'>Subscribe.</i>
+          <u>Contact Us</u>
         </h3>
         
         <h6 className='font center black-text'>

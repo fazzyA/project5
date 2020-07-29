@@ -40,7 +40,7 @@ export default class HeaderComponent extends Component {
             className='btn btn-header white-text text-darken-4 teal accent-3 modal-trigger'
             data-target='modal1'
           >
-            Get A Free Book
+            Get A Quotation
           </a>
         </div>
 
