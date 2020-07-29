@@ -1,6 +1,11 @@
 .brand-logo {
   margin-left: 10px !important;
 }
+hr{
+  width: 5px;
+  /* border-radius: 50%; */
+  color: purple;
+}
 body {
   margin: 0;
   width: 100%;

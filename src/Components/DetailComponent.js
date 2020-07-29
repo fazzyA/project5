@@ -34,7 +34,7 @@ export default function DetailComponent() {
           </div>
           <div className='col s12 m6'>
             {/* <img className='responsive-img' src={Detail} /> */}
-            <Lottie options={defaultOptions}  />
+            <Lottie options={defaultOptions} className='responsive-img'  />
           </div>
         </div>
       </div>

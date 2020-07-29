@@ -1,21 +1,30 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import bg from "../asset/bg.png";
 import bg2 from "../asset/bg2.jpg";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
+import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
 
-export default class HeaderComponent extends Component {
-  componentDidMount() {
-    M.Modal.init(this.Modal);
-  }
-  render() {
-    return (
+const HeaderComponent = () => {
+  // useEffect(()=>{
+  //      M.Modal.init(props.Modal);
+  // })
+  const { keyframes, timing } = fadeIn;
+  const { ref } = useWebAnimations({
+    keyframes,
+    timing: {
+      ...timing,
+      iterations: Infinity,
+      duration:1500,
+    },
+  });
+  return (
       <div className='row'><br /><br />
         <div className='col s12 m6'>
-          <img className='responsive-img' src={bg2} />
+          <img className='responsive-img' src={bg2} alt='bg' />
         </div>
         <div className='col s12 m6'>
-          <h4 className='font'>
+          <h4 className='font' ref={ref}>
             <b>Now Build your Own Presence</b>
           </h4>
           <h1 className='title purple-text text-darken-4'>
@@ -46,9 +55,9 @@ export default class HeaderComponent extends Component {
 
         <div>
           <div
-            ref={(Modal) => {
-              this.Modal = Modal;
-            }}
+            // ref={(Modal) => {
+            //   this.Modal = Modal;
+            // }}
             id='modal1'
             className='modal'
           >
@@ -68,7 +77,8 @@ export default class HeaderComponent extends Component {
             </div>
           </div>
         </div>
+        <hr />
       </div>
     );
   }
-}
+export default HeaderComponent

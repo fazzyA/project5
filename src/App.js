@@ -12,7 +12,7 @@ function App() {
       <NavbarComponent />
       <HeaderComponent />
       <DetailComponent />
-      {/* <IconComponent /> */}
+      <IconComponent />
       <AboutComponent />
       <FooterComponent />
     </div>

@@ -78,6 +78,9 @@ import useWebAnimations from "@wellyshen/use-web-animations";
             </a>
           </li>
         </ul>
+        <br />
+        <br />
+        <hr />
       </div>
     );
   }
