@@ -3,13 +3,14 @@ import bg from "../asset/bg.png";
 import bg2 from "../asset/bg2.jpg";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
+
 export default class HeaderComponent extends Component {
   componentDidMount() {
     M.Modal.init(this.Modal);
   }
   render() {
     return (
-      <div className='row'>
+      <div className='row'><br /><br />
         <div className='col s12 m6'>
           <img className='responsive-img' src={bg2} />
         </div>
@@ -18,7 +19,7 @@ export default class HeaderComponent extends Component {
             <b>Now Build your Own Presence</b>
           </h4>
           <h1 className='title purple-text text-darken-4'>
-            Web 
+ Web 
             <u>
               <span className='teal-text text-accent-3 i-line'>Axis</span>
             </u>{" "}
