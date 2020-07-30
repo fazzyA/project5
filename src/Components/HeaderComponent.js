@@ -4,7 +4,7 @@ import bg2 from "../asset/bg2.jpg";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
-
+import '../curve.css'
 const HeaderComponent = () => {
   // useEffect(()=>{
   //      M.Modal.init(props.Modal);
@@ -19,6 +19,7 @@ const HeaderComponent = () => {
     },
   });
   return (
+    <div className='my-bg-lite'>
       <div className='row'><br /><br />
         <div className='col s12 m6'>
           <img className='responsive-img' src={bg2} alt='bg' />
@@ -30,7 +31,7 @@ const HeaderComponent = () => {
           <h1 className='title purple-text text-darken-4'>
  Web 
             <u>
-              <span className='teal-text text-accent-3 i-line'>Axis</span>
+              <span className='mytext i-line'>Axis</span>
             </u>{" "}
           </h1>
           <p className='para'>
@@ -46,7 +47,7 @@ const HeaderComponent = () => {
           </p>
           <a
             href='#get'
-            className='btn btn-header white-text text-darken-4 teal accent-3 modal-trigger'
+            className='btn btn-header white-text text-darken-4 mybtn modal-trigger'
             data-target='modal1'
           >
             Get A Quotation
@@ -77,7 +78,14 @@ const HeaderComponent = () => {
             </div>
           </div>
         </div>
-        <hr />
+        {/* <hr />sd */}
+      </div>
+      <div className='row'>
+      <div className="holder">
+  <div className="ellipse"></div>
+  <div className="ellipse ellipse2"></div>
+</div>
+      </div>
       </div>
     );
   }

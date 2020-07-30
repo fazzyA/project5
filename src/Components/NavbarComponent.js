@@ -34,7 +34,7 @@ import useWebAnimations from "@wellyshen/use-web-animations";
           <img ref={ref} className='responsive-img' src={logo} alt='bg' width={80} height={60}/>
             <a href='#' className='brand-logo purple-text text-darken-4'>
               Web
-              <u><span className='teal-text text-accent-3 i-line'>Axis</span>
+              <u><span className='mytext i-line'>Axis</span>
               </u>
             </a>
             <ul id='nav-mobile' className='right hide-on-med-and-down'>
@@ -80,7 +80,7 @@ import useWebAnimations from "@wellyshen/use-web-animations";
         </ul>
         <br />
         <br />
-        <hr />
+        {/* <hr /> */}
       </div>
     );
   }

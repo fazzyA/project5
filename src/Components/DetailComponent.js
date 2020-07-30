@@ -2,6 +2,7 @@ import React from "react";
 import Detail from "../asset/details.jpg";
 import Lottie from "react-lottie";
 import animationData from '../asset/27620-contact-us.json'
+import '../curve.css'
 
 export default function DetailComponent() {
   const defaultOptions = {
@@ -27,7 +28,7 @@ export default function DetailComponent() {
             </p>
             <a
               href='#'
-              className='btn btn-header white-text text-darken-4 teal accent-3'
+              className='btn btn-header white-text text-darken-4 mybtn'
             >
               Download App
             </a>
@@ -37,6 +38,13 @@ export default function DetailComponent() {
             <Lottie options={defaultOptions} className='responsive-img'  />
           </div>
         </div>
+        <div className='row'>
+      <div className="holder">
+  <div className="ellipse"></div>
+  <div className="ellipse ellipse2"></div>
+</div>
+      </div>
+
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ export default function FooterComponent() {
   
 
   return (
-    <footer className='page-footer grey lighten-2'>
+    <footer className='page-footer footer-bg lighten-2'>
       <div className='row'>
         <h3 className='center title black-text'>
           <u>Contact Us</u>
@@ -53,7 +53,7 @@ export default function FooterComponent() {
                 <label htmlFor='user_name'>Username</label>
               </div> */}
               <div className='input-field'>
-                <i className='material-icons prefix teal-text text-accent-3'>
+                <i className='material-icons prefix mytext'>
                   mail
                 </i>
                 <input id='last_name' type='text' className='validate' />
@@ -63,7 +63,7 @@ export default function FooterComponent() {
             <div className='card-action'>
               <a
                 href='#subscribe'
-                className='btn btn-header white-text text-darken-4 teal accent-3'
+                className='btn btn-header white-text text-darken-4 mybtn'
               >
                 {" "}
                 Subscribe To Newsletter
@@ -78,7 +78,7 @@ export default function FooterComponent() {
 
         </div>
       </div>
-      <div className='footer-copyright purple darken-4'>
+      <div className='footer-copyright my-darken-4'>
         <div className='container'>
           © <b className='font'>2020 Bootcamp</b>
           <a className='grey-text text-lighten-4 right' href='#!'>

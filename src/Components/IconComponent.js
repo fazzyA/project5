@@ -3,6 +3,7 @@ import Aone from "../asset/a-1.svg";
 import Atwo from "../asset/a-2.svg";
 import Athree from "../asset/a-3.svg";
 import Afour from "../asset/a-4.svg";
+import '../curve.css'
 
 export default function IconComponent() {
   return (
@@ -57,6 +58,13 @@ export default function IconComponent() {
           </h6>
         </div>
       </div>
+      <div className='row'>
+      <div className="holder">
+  <div className="ellipse"></div>
+  <div className="ellipse ellipse2"></div>
+</div>
+      </div>
+
     </div>
   );
 }

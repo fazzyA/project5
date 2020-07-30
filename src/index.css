@@ -1,10 +1,30 @@
+/*  from teal to grey */
+.teal-text.text-accent-3, .mytext{
+  color: #939395 !important;
+}
+.teal.accent-3, .mybtn {
+  background-color: #575988 !important;
+}
+.purple.darken-4, .my-darken-4{
+  background-color: #575988 !important;
+}
+/* changes end */
 .brand-logo {
   margin-left: 10px !important;
 }
 hr{
-  width: 5px;
+  height: 5px !important;
+  text-shadow: rosybrown !important;
   /* border-radius: 50%; */
-  color: purple;
+  color: #4A148C !important;
+  background-color: #59328a !important;
+}
+hr.myhr{
+  height: 3px !important;
+  border-radius: 10%;
+  color: #4A148C !important;
+  background-color: #d3cfda !important;
+
 }
 body {
   margin: 0;
@@ -33,7 +53,7 @@ code {
 }
 
 .btn-nav {
-  border: purple;
+  border: #575988;
   border-style: solid;
   border-radius: 5px;
   border-width: 1px;
@@ -84,7 +104,9 @@ code {
 .one {
   margin-top: 50px;
 }
-
+.page-footer{
+  background-color: #B1D0D5 !important;
+}
 .card {
   border-radius: 5px;
 }
